@@ -1,0 +1,318 @@
+/* Koyu Tema - OFİS HAL (Araç Takip Stili) */
+:root {
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #16213e;
+    --bg-card: #16213e;
+    --text-primary: #e2e2e2;
+    --text-secondary: #a0a0a0;
+    --border: #2a2a3a;
+    --input-bg: #0f3460;
+    --input-border: #2a2a3a;
+    --hover-bg: #0f3460;
+    --success: #4e9f3d;
+    --danger: #e94560;
+    --warning: #f5a623;
+    --info: #0f3460;
+    --highlight: #e94560;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Kartlar */
+.card, .modal-calc-content, .musteri-modal-content {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.card-header {
+    background-color: #0f3460 !important;
+    border-bottom: 1px solid var(--border);
+    border-radius: 12px 12px 0 0 !important;
+    color: white !important;
+}
+
+.card-header h3, .card-header h4 {
+    color: white !important;
+}
+
+/* Form elemanları */
+.form-control, .input-group-text {
+    background-color: var(--input-bg);
+    border-color: var(--input-border);
+    color: white;
+    border-radius: 6px;
+}
+
+.form-control:focus {
+    background-color: #1a4a7a;
+    color: white;
+    border-color: var(--highlight);
+    box-shadow: 0 0 0 0.25rem rgba(233,69,96,0.25);
+}
+
+.form-control::placeholder {
+    color: #88a0c0;
+}
+
+/* Butonlar */
+.btn-primary {
+    background-color: var(--info);
+    border-color: var(--info);
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #1a4a7a;
+}
+
+.btn-success {
+    background-color: var(--success);
+    border-color: var(--success);
+    color: white;
+}
+.btn-success:hover {
+    background-color: #3d7a2f;
+}
+
+.btn-warning {
+    background-color: var(--warning);
+    border-color: var(--warning);
+    color: #1a1a2e;
+    font-weight: bold;
+}
+.btn-warning:hover {
+    background-color: #e59400;
+}
+
+.btn-danger {
+    background-color: var(--danger);
+    border-color: var(--danger);
+    color: white;
+}
+.btn-danger:hover {
+    background-color: #c73a54;
+}
+
+.btn-secondary {
+    background-color: #2a2a3a;
+    border-color: #2a2a3a;
+    color: #e2e2e2;
+}
+.btn-secondary:hover {
+    background-color: #3a3a4a;
+}
+
+/* Tablolar */
+.table {
+    color: var(--text-primary);
+    border-color: var(--border);
+}
+
+.table-bordered, .table-bordered td, .table-bordered th {
+    border-color: var(--border);
+}
+
+.table-dark {
+    background-color: #0f3460;
+    color: white;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #1a1a2e;
+}
+.table-striped > tbody > tr:nth-of-type(even) {
+    background-color: #16213e;
+}
+
+.table-secondary {
+    background-color: #0f3460 !important;
+    color: white !important;
+}
+.table-secondary th {
+    background-color: #0f3460 !important;
+    color: white !important;
+}
+
+/* Tablo hücreleri */
+td, th {
+    padding: 10px;
+    border-color: var(--border) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Fatura tablosu inputları */
+.fatura-table input {
+    background-color: var(--input-bg);
+    color: white;
+    border-color: var(--input-border);
+    border-radius: 4px;
+    padding: 6px;
+    text-align: center;
+    width: 100%;
+}
+
+.fatura-table input:focus {
+    background-color: #1a4a7a;
+    outline: 2px solid var(--highlight);
+    outline-offset: 1px;
+}
+
+.fatura-table input::placeholder {
+    color: #88a0c0;
+}
+
+.fatura-table .urun-ad, 
+.fatura-table .birim, 
+.fatura-table .tutar {
+    background-color: #0f3460;
+    color: white;
+}
+
+/* Toplam tablosu */
+.table-light {
+    background-color: #16213e !important;
+    color: var(--text-primary) !important;
+}
+.table-light td, .table-light th {
+    color: var(--text-primary) !important;
+}
+
+.table-success {
+    background-color: #1a3a1a !important;
+    color: #4e9f3d !important;
+}
+.table-success td, .table-success th {
+    color: #4e9f3d !important;
+}
+
+/* Alert */
+.alert-info {
+    background-color: #0f3460;
+    color: #88a0c0;
+    border-color: #1a4a7a;
+}
+.alert-info strong, .alert-info kbd {
+    color: #e2e2e2;
+}
+
+/* KBD etiketleri */
+kbd {
+    background-color: #1a1a2e;
+    color: #e2e2e2;
+    border: 1px solid #2a2a3a;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+}
+
+/* Modallar */
+.modal-calc {
+    background-color: rgba(0,0,0,0.8);
+}
+.modal-calc-content {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+}
+.modal-calc-content h4, .modal-calc-content label {
+    color: white;
+}
+
+/* Liste grupları */
+.list-group-item {
+    background-color: var(--bg-card);
+    border-color: var(--border);
+    color: var(--text-primary);
+}
+.list-group-item:hover {
+    background-color: var(--hover-bg);
+}
+.list-group-item-action {
+    color: var(--text-primary);
+}
+.list-group-item small {
+    color: #88a0c0;
+}
+
+/* Toast */
+.toast-notify {
+    background-color: #16213e;
+    color: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+/* Ref No - vurgulu */
+#refNoGoster {
+    color: var(--highlight) !important;
+    font-weight: bold;
+}
+
+/* Toplam değerler */
+#malToplam, #kdvTutar, #genelToplam {
+    color: var(--highlight) !important;
+    font-weight: bold;
+}
+
+/* Müşteri bilgi kutusu */
+#musteriBilgi {
+    background-color: #0f3460 !important;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: white !important;
+}
+#musteriBilgi strong {
+    color: var(--warning) !important;
+}
+
+/* Tema toggle butonu */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #0f3460;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    color: white;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1a1a2e;
+}
+::-webkit-scrollbar-thumb {
+    background: #0f3460;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #1a4a7a;
+}
+
+/* Input grup butonu */
+.input-group-text {
+    background-color: #0f3460;
+    color: white;
+}
+
+/* Small etiketleri */
+small, .text-muted {
+    color: #88a0c0 !important;
+}
